@@ -8,15 +8,6 @@ sum(2,4,6,7,8,9,2,3,4,6, 3)
 
 read.csv("mydocument.csv", header = TRUE)
 
-a <- 3
-
-hate_function <- function(name){
-  a <- "very much"
-  return(paste(name, "I hate you", a))
-}
-
-hate_function("Trump")
-
 ?read.csv
 # This script should be used by the mentor as a guide to ask students type code,
 # and comment this code in a whiteboard
@@ -167,3 +158,15 @@ df
 colSums(df[1:2], na.rm = T)
 
 hist(df$v1)
+
+
+# Part 4. functions ####
+
+a <- 3
+
+hate_function <- function(name){
+  a <- "very much"
+  return(paste(name, "I hate you", a))
+}
+
+hate_function("Trump")
