@@ -4,32 +4,25 @@
 # Version 1 - 03.06.2019                                    #
 # --------------------------------------------------------- #
 
-sum(2,4,6,7,8,9,2,3,4,6, 3)
-
-read.csv("mydocument.csv", header = TRUE)
-
-?read.csv
 # This script should be used by the mentor as a guide to ask students type code,
 # and comment this code in a whiteboard
 
 # Part 1: data types & vectors ####
 
-# Ask students what data types are there in R. Make them create an object from each type.
+# Ask students what data types are there in R. 
+# Make them create an object from each type.
 
 # character
-myCh <- "We cannot teach people anything; we can only help them discover it within themselves. - Galileo Galilei"
+myCh <-
+  "We cannot teach people anything; we can only help them discover it within themselves. - Galileo Galilei"
 class(myCh)
-typeof(myCh)
 # numeric
 myNum <- 3.14159
 class(myNum)
-typeof(myNum)
-
 # integer
 myInt <- 1:10
 myInt
 class(myInt)
-typeof(myInt)
 # logical
 myLogical <- TRUE
 class(myLogical)
@@ -40,16 +33,21 @@ class(myCmplx)
 
 
 # Ask to students: What is a vector in R?
-# It is a succession of elements of the same data type (technically this is called an atomic vector)
+# A succession of elements of the same data type (technically this is an atomic vector)
 # Ask students to create a vector and check its class.
 # We create vectors using the function c()
 a <- c(1, 2, 3, 4)
 a
-class(a)
-typeof(a)
+class(a) # We get the class of its elements 
 
-# Ask students: How do you get the third element of the vector?
+# Ask students: how do you get the third element of the vector?
 a[3]
+# Ask students: how do you get the elements between the 2nd and the 4th?
+a[2:4]
+# Ask students: how do you get all elements but the 3rd?
+a[-3]
+# Ask students: how do you get all elements bigger than 2?
+a[a>2]
 
 # We can use some functions to explore this vector. Ask students to get:
 length(a)
@@ -66,8 +64,8 @@ class(b)
 c <- list("a", 3, 4) # we create a list!
 c
 # Lists are heterogenuous: can contain anything inside, like vectors... or even other lists!
-myList <- list(1, "a", c(1, 2, 3), list("a", "b", 4)) # 
-
+myList <- list(1, "a", c(1, 2, 3), list("a", "b", 4)) 
+myList
 
 # Part 2: samples ####
 
