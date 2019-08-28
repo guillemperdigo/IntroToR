@@ -7,6 +7,9 @@
 # This script should be used by the mentor as a guide to ask students type code,
 # and comment this code in a whiteboard
 
+# Some of this exercises have been inspired by this book:
+# https://rstudio-education.github.io/hopr/
+
 # Part 1: data types & vectors ####
 
 # Ask students what data types are there in R. 
@@ -50,11 +53,14 @@ a[-3]
 a[a>2]
 
 # We can use some functions to explore this vector. Ask students to get:
-length(a)
-sum(a)
-mean(a)
-median(a)
-sd(a)
+length(a) # the number of elements in vector
+sum(a) # the sum of all elements in vector
+mean(a) # the mean
+median(a) # the median
+sd(a) # the standard deviation
+
+# We can convert the elements of this vector from numbers into characters:
+a_ch <- as.character(a)
 
 # Ask students: what happens if there's a character mixed up with the numbers of my vector?
 b <- c("a", 3, 4) # numbers get coerced into characters
