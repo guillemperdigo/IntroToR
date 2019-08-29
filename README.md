@@ -1,5 +1,8 @@
 # IntroToR
-Introductory exercises to R programming for Data Analytics.
+Introductory exercises to R programming for Data Analytics. Students need to have R and RStudio installed before starting the exercises.
+
+## Base R cheat sheet
+Print a copy of this document for each student.
 
 ## Introduction to R.R
 This script should be used by the mentor as a guide while asking students to type code. Google is allowed & students should have a printed copy of the "Base R cheat sheet" (https://www.rstudio.com/wp-content/uploads/2016/05/base-r.pdf). 
