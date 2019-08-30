@@ -44,7 +44,7 @@ summary(df)
 names(df)
 dim(df)
 
-# Part 2. Selecting from a data frame ----
+# Part 2. Subsetting (selecting from) a data frame with the "[" operators ----
 
 # How do you select the first column?
 df[1]
@@ -114,10 +114,12 @@ colnames(df_4) <- names(df_3) # same but quicker
 
 df_5 <- rbind(df_3, df_4) # now it works :)
 
-# Part 4: Subsetting ----
+# Part 4: Subsetting with subset() ----
 
 # Let's subset this dataframe using subset(). Read the help page for this function.
 
+# Overwrite the dataframe df_5, keeping only the rows where v5 is bigger than 60.
+df_5 <- subset(df_5, v5 > 60)
 
 # We're going to "export" this dataframe into a csv file so we can send it or open
 # it with other programs. Try to find on the internet how to do this!
