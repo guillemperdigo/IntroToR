@@ -1,5 +1,5 @@
 # ------------------------------------------------------------- #
-# Introduction to R (2): Data frames  #
+# Introduction to R (2): Data frames                            #
 # Author: Guillem Perdigó                                       #
 # Ubiqum Code Academy                                           #
 # Created - 03.06.2019                                          #
